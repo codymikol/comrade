@@ -64,7 +64,7 @@ def init():
 
     # Use PID as the file name
     pid = vim.funcs.getpid()
-    addr = os.getenv("NVIM_LISTEN_ADDRESS")
+    addr = os.getenv("NVIM")
     version = vim.vars['comrade_version']
     cwd = os.getcwd()
     with open(os.path.join(CONFIG_DIR, f"{pid}"), "w") as pid_file:
